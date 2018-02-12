@@ -1,0 +1,24 @@
+.related-content {
+	border-top: 10px solid $govuk-blue;
+	padding-top: 5px;
+
+	.heading-medium {
+		margin-top: 0;
+	}
+
+	h2 {
+		@include bold-24;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+	}
+
+	ul li {
+		@include core-16;
+		list-style: none;
+		position: relative;
+		padding: 0;
+		margin-bottom: 0.75em;
+	}
+}

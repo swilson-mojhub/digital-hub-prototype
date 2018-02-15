@@ -9,10 +9,13 @@ layout: default
         <div class="inner-block floated-children">
           <div class="welcome-text">
             <div class="floated-inner-block">
-              <h1>Welcome</h1>
+              <h1>{{ page.title }}</h1>
               <!-- <h2 class="font-large">Andrew</h2> -->
             </div>
           </div>
+
+
+
           <!-- <div class="content-links">
             <div class="floated-inner-block content-links-inner">
               <h2>Self service tool</h2>
@@ -27,18 +30,38 @@ layout: default
     </div>
   </header>
   <div class="site-wrapper">
+
+    <form action="/search" method="get" role="search">
+
+      <div class="govuk-search on-govuk-blue" data-module="toggle-input-class-on-focus">
+        <label for="search-main-36f3ba43" class="search-label">
+          Search
+        </label>
+        <div class="search-wrapper">
+          <input type="search" value="" id="search-main-36f3ba43" name="q" title="Search" class="search-element search-input js-class-toggle">
+          <div class="search-element search-submit-wrapper">
+            <button type="submit" class="search-submit">Search</button>
+          </div>
+        </div>
+      </div>
+
+                    </form>
+
     <div class="image-grid">
       <div class="grid-row">
-        {% for item in site.items %}
+
+        <!-- check to see if the data file has a submenu, and if so display it -->
+        {% for item in site.data.nav %}
           <div class="column-one-third">
             <div class="image-grid-item">
-              <a href="{{ item.url }}">
-                <img src="{{ item.thumb }}" alt="{{ item.title }}">
+              <a href="{{ item.href }}">
+                <!-- <img src="{{ item.thumb }}" alt="{{ item.title }}"> -->
                 <h2 class="heading-medium">{{ item.title }}</h2>
               </a>
             </div>
           </div>
         {% endfor %}
+    </ul>
       </div>
     </div>
   </div>

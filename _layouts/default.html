@@ -9,23 +9,23 @@
     <title>{{ site.title | default: "GOV.UK" }}</title>
     {% endif %}
 
-    <link rel="stylesheet" media="screen" href="{{ "/assets/main.css" | relative_url }}"/>
+    <link rel="stylesheet" media="screen" href="{{ "/assets/main.css" | absolute_url }}"/>
 
-    <!--[if gt IE 8]><!--><link href="{{ "/hmppsAssets/css/govuk-template.css?0.22.3" | relative_url }}" media="screen" rel="stylesheet" /><!--<![endif]-->
-    <link href="{{ "/hmppsAssets/css/govuk-template-print.css?0.22.3" | relative_url }}" media="print" rel="stylesheet" />
-    <!--[if gte IE 9]><!--><link href="{{ "/hmppsAssets/css/fonts.css?0.22.3" | relative_url }}" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if gt IE 8]><!--><link href="{{ "/hmppsAssets/css/govuk-template.css?0.22.3" | absolute_url }}" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <link href="{{ "/hmppsAssets/css/govuk-template-print.css?0.22.3" | absolute_url }}" media="print" rel="stylesheet" />
+    <!--[if gte IE 9]><!--><link href="{{ "/hmppsAssets/css/fonts.css?0.22.3" | absolute_url }}" media="all" rel="stylesheet" /><!--<![endif]-->
 
-    <link rel="shortcut icon" href="{{ "/hmppsAssets/img/favicon.ico?0.22.3" | relative_url }}" type="image/x-icon" />
-    <link rel="mask-icon" href="{{ "/hmppsAssets/img/gov.uk_logotype_crown.svg?0.22.3" | relative_url }}" color="#0b0c0c">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/hmppsAssets/img/apple-touch-icon-180x180.png?0.22.3" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="167x167" href="{{ "/hmppsAssets/img/apple-touch-icon-167x167.png?0.22.3" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/hmppsAssets/img/apple-touch-icon-152x152.png?0.22.3" | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ "/hmppsAssets/img/apple-touch-icon.png?0.22.3" | relative_url }}">
+    <link rel="shortcut icon" href="{{ "/hmppsAssets/img/favicon.ico?0.22.3" | absolute_url }}" type="image/x-icon" />
+    <link rel="mask-icon" href="{{ "/hmppsAssets/img/gov.uk_logotype_crown.svg?0.22.3" | absolute_url }}" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/hmppsAssets/img/apple-touch-icon-180x180.png?0.22.3" | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{{ "/hmppsAssets/img/apple-touch-icon-167x167.png?0.22.3" | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/hmppsAssets/img/apple-touch-icon-152x152.png?0.22.3" | absolute_url }}">
+    <link rel="apple-touch-icon" href="{{ "/hmppsAssets/img/apple-touch-icon.png?0.22.3" | absolute_url }}">
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="{{ "/hmppsAssets/img/opengraph-image.png?0.22.3" | relative_url }}">
+    <meta property="og:image" content="{{ "/hmppsAssets/img/opengraph-image.png?0.22.3" | absolute_url }}">
 
-    <!--[if gt IE 8]><!--><link href="{{ "/hmppsAssets/css/hmpps.css" | relative_url }}"  rel="stylesheet" type="text/css"><!--<![endif]-->
+    <!--[if gt IE 8]><!--><link href="{{ "/hmppsAssets/css/hmpps.css" | absolute_url }}"  rel="stylesheet" type="text/css"><!--<![endif]-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,23 +58,23 @@
 
     <!-- scripts needed for Chess -->
 
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/jquery-3.2.1.min.js" | relative_url }}"></script>
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/chessboard-0.3.0.min.js" | relative_url }}"></script>
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/chess.min.js" | relative_url }}"></script>
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/stockfish.js" | relative_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/jquery-3.2.1.min.js" | absolute_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/chessboard-0.3.0.min.js" | absolute_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/chess.min.js" | absolute_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/stockfish.js" | absolute_url }}"></script>
 
     <!-- scripts needed for Suduko -->
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/sudokuJS.js" | relative_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/sudokuJS.js" | absolute_url }}"></script>
 
 
     <!-- scripts needed for books -->
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/jszip.min.js" | relative_url }}"></script>
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/epub.min.js" | relative_url }}"></script>
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/mime-types.js" | relative_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/jszip.min.js" | absolute_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/epub.min.js" | absolute_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/mime-types.js" | absolute_url }}"></script>
 
     <!-- scripts needed for books later on in the project (not needed for now) -->
-    <!-- <script src="{{ "/hmppsAssets/js/src/third-party/lib/hooks.min.js" | relative_url }}"></script>
-    <script src="{{ "/hmppsAssets/js/src/third-party/lib/reader.min.js" | relative_url }}"></script> -->
-    <script src="{{ "/hmppsAssets/js/application.js" | relative_url }}"></script>
+    <!-- <script src="{{ "/hmppsAssets/js/src/third-party/lib/hooks.min.js" | absolute_url }}"></script>
+    <script src="{{ "/hmppsAssets/js/src/third-party/lib/reader.min.js" | absolute_url }}"></script> -->
+    <script src="{{ "/hmppsAssets/js/application.js" | absolute_url }}"></script>
     </body>
     </html>

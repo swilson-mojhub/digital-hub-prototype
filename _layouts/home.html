@@ -31,21 +31,7 @@ layout: default
   </header>
   <div class="site-wrapper">
 
-    <form action="/search" method="get" role="search">
-
-      <div class="govuk-search on-govuk-blue" data-module="toggle-input-class-on-focus">
-        <label for="search-main-36f3ba43" class="search-label">
-          Search
-        </label>
-        <div class="search-wrapper">
-          <input type="search" value="" id="search-main-36f3ba43" name="q" title="Search" class="search-element search-input js-class-toggle">
-          <div class="search-element search-submit-wrapper">
-            <button type="submit" class="search-submit">Search</button>
-          </div>
-        </div>
-      </div>
-
-                    </form>
+    {% include search.html %}
 
     <div class="image-grid">
       <div class="grid-row">

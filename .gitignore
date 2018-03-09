@@ -8,3 +8,5 @@ assets/**
 images
 images/**
 .DS_Store
+css
+css/**

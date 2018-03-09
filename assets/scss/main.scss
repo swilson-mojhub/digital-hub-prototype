@@ -1,0 +1,9 @@
+@import '../toolkit/scss/_grid_layout';
+
+.someClass {
+  display: block;
+
+  .red {
+    background: red;
+  }
+}

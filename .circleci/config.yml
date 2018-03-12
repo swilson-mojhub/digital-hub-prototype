@@ -14,5 +14,8 @@ jobs:
           name: Install Dependencies
           command: npm install
       - run:
-          name: Build Prototype
+          name: Copy gov assets into project
+          command: gulp copyGovAssets
+      - run:
+          name: Build prototype
           command: gulp build

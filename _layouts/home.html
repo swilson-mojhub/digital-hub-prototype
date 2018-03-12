@@ -2,53 +2,17 @@
 layout: default
 ---
 
-<main class="elements-index root-index" id="content"  role="main" tabindex="-1">
-  <header class="homepage-top">
-    <div class="homepage-top-inner">
-      <div class="welcome-block">
-        <div class="inner-block floated-children">
-          <div class="welcome-text">
-            <div class="floated-inner-block">
-              <h1>{{ page.title }}</h1>
-              <!-- <h2 class="font-large">Andrew</h2> -->
-            </div>
-          </div>
-
-
-
-          <!-- <div class="content-links">
-            <div class="floated-inner-block content-links-inner">
-              <h2>Self service tool</h2>
-              <ul>
-                <li><a href="">Click to order your food or buy items from DHL</a></li>
-
-              </ul>
-            </div>
-          </div> -->
+<main role="main">
+  <div id="page-container">
+    <div class="grid-row">
+      <!-- check to see if the data file has a submenu, and if so display it -->
+      {% for item in site.data.nav %}
+        <div class="column-third">
+          <a href="{{ item.href }}">
+            <h2 class="heading-medium">{{ item.title }}</h2>
+          </a>
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="site-wrapper">
-
-    {% include search.html %}
-
-    <div class="image-grid">
-      <div class="grid-row">
-
-        <!-- check to see if the data file has a submenu, and if so display it -->
-        {% for item in site.data.nav %}
-          <div class="column-one-third">
-            <div class="image-grid-item">
-              <a href="{{ item.href }}">
-                <!-- <img src="{{ item.thumb }}" alt="{{ item.title }}"> -->
-                <h2 class="heading-medium">{{ item.title }}</h2>
-              </a>
-            </div>
-          </div>
-        {% endfor %}
-    </ul>
-      </div>
+      {% endfor %}
     </div>
   </div>
-</main><!-- / #content -->
+</main>

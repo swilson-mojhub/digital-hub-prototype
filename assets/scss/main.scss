@@ -1,9 +1,15 @@
-@import '../toolkit/scss/_grid_layout';
+@import '../toolkit/scss/_grid_layout.scss';
 
-.someClass {
-  display: block;
+#page-container {
+  @extend %site-width-container;
+}
+.grid-row {
+  @extend %grid-row;
 
-  .red {
-    background: red;
+  .column-third {
+    @include grid-column( 1/3 );
+  }
+  .column-two-thirds {
+    @include grid-column( 2/3 );
   }
 }

@@ -2,34 +2,23 @@
 layout: default
 ---
 
-<div id="global-header-bar"></div>
-
-<div class="site-wrapper">
-
-  {% include breadcrumb.html %}
-
-  <main class="elements-index root-index" id="content" role="main" tabindex="-1">
-    <div class="pub-c-title">
-        <h1 class="heading-xlarge">{{ page.title }}</h1>
+<main role="main">
+  <div id="page-container">
+    <div class="grid-row">
+      <!-- check to see if the data file has a submenu, and if so display it -->
+      {% for item in site.data.nav %}
+        {% if item.levelone != null %}
+          {% if item.section == page.section %}
+            {% for subcategory in item.levelone %}
+              <div class="column-third">
+                <a href="{{ subcategory.href }}">
+                  <h2 class="heading-medium">{{ subcategory.title }}</h2>
+                </a>
+              </div>
+            {% endfor %}
+          {% endif %}
+          {% endif %}
+      {% endfor %}
     </div>
-    <div class="image-grid">
-      <div class="grid-row">
-        {% for item in site.data.nav %}
-          {% if item.levelone != null %}
-            {% if item.section == page.section %}
-              {% for subcategory in item.levelone %}
-                <div class="column-one-third">
-                  <div class="image-grid-item">
-                    <a href="{{ subcategory.href }}">
-                      <h2 class="heading-medium">{{ subcategory.title }}</h2>
-                    </a>
-                  </div>
-                </div>
-              {% endfor %}
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </main><!-- / #content -->
-</div>
+  </div>
+</main>

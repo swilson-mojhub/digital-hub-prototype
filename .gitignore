@@ -3,10 +3,7 @@ _site
 .jekyll-metadata
 node_modules
 node_modules/**
-assets
-assets/**
-images
-images/**
+assets/toolkit
 .DS_Store
 css
 css/**

@@ -6,6 +6,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Ruby dependencies
+          command: bundle install
+      - run:
+          name: Install Gulp
+          command: npm install gulp
+      - run:
           name: Install Dependencies
           command: npm install
       - run:

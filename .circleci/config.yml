@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    docker:
+      - image: circleci/ruby:latest-node-browsers
     steps:
       - checkout
       - run: gulp build

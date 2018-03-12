@@ -1,8 +1,7 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/ruby:latest-node-browsers
+    machine: true
     steps:
       - checkout
       - run:

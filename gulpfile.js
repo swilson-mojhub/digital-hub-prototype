@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const child = require('child_process');
 const browsersync = require('browser-sync');
 const sass = require('gulp-sass');
-
 const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 
 gulp.task('default', ['copyGovAssets', 'sass','jekyll', 'browsersync'])

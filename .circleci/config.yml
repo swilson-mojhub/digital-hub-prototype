@@ -8,8 +8,8 @@ jobs:
           name: Ruby dependencies
           command: bundle install
       - run:
-          name: Install -g Gulp
-          command: npm install gulp
+          name: Install Gulp
+          command: npm install -g gulp
       - run:
           name: Install Dependencies
           command: npm install

@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   post:
-    - bundle exec jekyll build
+    - gulp build
 
 test:
   override:
@@ -14,11 +14,8 @@ test:
   # post:
     # - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
 
-deployment:
-  prod:
-    branch: master
-    commands:
-      - rsync -va --delete ./_site/ circleci@stevenalanwilson.com:/var/www/html
-test:
-  override:
-    - echo "test"
+# deployment:
+#   prod:
+#     branch: master
+#     commands:
+#       - rsync -va --delete ./_site/ circleci@stevenalanwilson.com:/var/www/html

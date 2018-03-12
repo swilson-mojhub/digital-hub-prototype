@@ -7,7 +7,9 @@ const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 
 gulp.task('default', ['copyGovAssets', 'sass','jekyll', 'browsersync'])
 
-gulp.task('build', ['copyGovAssets', 'sass'])
+gulp.task('build', ['copyGovAssets', 'sass', 'jekyll'])
+
+gulp.task('server', ['browsersync'])
 
 
 gulp.task('jekyll', (done) => {

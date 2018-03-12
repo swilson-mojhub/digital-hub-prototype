@@ -5,4 +5,9 @@ jobs:
       - image: circleci/ruby:latest-node-browsers
     steps:
       - checkout
-      - run: gulp build
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Build Prototype
+          command: gulp build

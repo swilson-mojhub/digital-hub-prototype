@@ -11,7 +11,7 @@ layout: default
           {% if item.section == page.section %}
             {% for subcategory in item.levelone %}
               <div class="column-third">
-                <a href="{{ subcategory.href }}">
+                <a href="{{ baseurl }}{{ subcategory.href }}">
                   <h2 class="heading-medium">{{ subcategory.title }}</h2>
                 </a>
               </div>

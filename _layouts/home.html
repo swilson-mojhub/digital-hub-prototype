@@ -8,7 +8,7 @@ layout: default
       <!-- check to see if the data file has a submenu, and if so display it -->
       {% for item in site.data.nav %}
         <div class="column-third">
-          <a href="{{ item.href }}">
+          <a href="{{ baseurl }}{{ item.href }}">
             <h2 class="heading-medium">{{ item.title }}</h2>
           </a>
         </div>

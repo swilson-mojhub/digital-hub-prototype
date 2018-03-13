@@ -7,7 +7,17 @@ const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 gulp.task('default', ['copyGovAssets', 'sass','jekyll', 'browsersync'])
 gulp.task('copyGovAssets', ['copyGovAssets'])
 gulp.task('build', ['sass', 'jekyll'])
-gulp.task('server', ['browsersync'])
+gulp.task('server', ['jekyll-local', 'browsersync'])
+
+gulp.task('jekyll-local', (done) => {
+  return child.spawn(jekyll, ['build',
+    '--incremental',
+    '--drafts',
+    '--baseurl',
+    '/'
+  ])
+  .on('close', done);
+})
 
 gulp.task('jekyll', (done) => {
   return child.spawn(jekyll, ['build',

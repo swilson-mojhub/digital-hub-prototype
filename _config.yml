@@ -9,8 +9,6 @@ github_username:  jekyll
 
 include:
   - _pages
-  - _layouts
-  - _includes
 
 # Build settings
 markdown: kramdown
@@ -31,3 +29,4 @@ exclude:
   - LICENSE
   - docker-compose.yml
   - README.md
+  - Makefile

@@ -12,7 +12,9 @@ gulp.task('server', ['browsersync'])
 gulp.task('jekyll', (done) => {
   return child.spawn(jekyll, ['build',
     '--incremental',
-    '--drafts'
+    '--drafts',
+    '--destination',
+    'docs'
   ])
   .on('close', done);
 })

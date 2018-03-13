@@ -44,6 +44,4 @@ gulp build
 gulp server
 ```
 
-## Run the prototype
-
-Run the following commend from the root directory and the prototype will be viewable from [http://localhost:4000/](http://localhost:4000/)
+The prototype will be viewable from [http://localhost:4000/](http://localhost:4000/)

@@ -19,3 +19,9 @@ jobs:
       - run:
           name: Build prototype
           command: gulp build
+# Deploy test
+  - deploy:
+      command: |
+        if [ "${CIRCLE_BRANCH}" == "master" ];
+          then ./scripts/deploy-to-test.sh test;
+        fi

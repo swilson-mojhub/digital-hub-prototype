@@ -11,31 +11,31 @@
 
 
 
-    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="{{ "/assets/stylesheets/govuk-template.css" | relative_url }}"/><!--<![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="{{ baseurl }}{{ "/assets/stylesheets/govuk-template.css" | relative_url }}"/><!--<![endif]-->
     <!--[if IE 6]><link rel="stylesheet" media="screen" href="{{ "/assets/stylesheets/govuk-template-ie6.css" | relative_url }}"/><![endif]-->
     <!--[if IE 7]><link rel="stylesheet" media="screen" href="{{ "/assets/stylesheets/govuk-template-ie7.css" | relative_url }}"/><![endif]-->
     <!--[if IE 8]><link rel="stylesheet" media="screen" href="{{ "/assets/stylesheets/govuk-template-ie8.css" | relative_url }}"/><![endif]-->
-    <link rel="stylesheet" media="print" href="{{ "/assets/stylesheets/govuk-template-print.css" | relative_url }}"/>
+    <link rel="stylesheet" media="print" href="{{ baseurl }}{{ "/assets/stylesheets/govuk-template-print.css" | relative_url }}"/>
 
     <!--[if IE 8]><link rel="stylesheet" media="all" href="{{ "/assets/stylesheets/fonts-ie8.css" | relative_url }}"/><![endif]-->
-    <!--[if gte IE 9]><!--><link rel="stylesheet" media="all" href="{{ "/assets/stylesheets/fonts.css" | relative_url }}"/><!--<![endif]-->
+    <!--[if gte IE 9]><!--><link rel="stylesheet" media="all" href="{{ baseurl }}{{ "/assets/stylesheets/fonts.css" | relative_url }}"/><!--<![endif]-->
     <!--[if lt IE 9]><script src="{{ "/assets/javascripts/ie.js" | relative_url }}"></script><![endif]-->
 
-    <link rel="stylesheet" media="screen" href="{{ "/assets/stylesheets/main.css" | relative_url }}"/>
+    <link rel="stylesheet" media="screen" href="{{ baseurl }}{{ "/assets/stylesheets/main.css" | relative_url }}"/>
 
-    <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ baseurl }}{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon" />
 
-    <link rel="mask-icon" href="{{ "/assets/images/gov.uk_logotype_crown.svg" | relative_url }}" color="#0b0c0c">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/images/apple-touch-icon-180x180.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="167x167" href="{{ "/assets/images/apple-touch-icon-167x167.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/images/apple-touch-icon-152x152.png" | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon.png" | relative_url }}">
+    <link rel="mask-icon" href="{{ baseurl }}{{ "/assets/images/gov.uk_logotype_crown.svg" | relative_url }}" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ baseurl }}{{ "/assets/images/apple-touch-icon-180x180.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{{ baseurl }}{{ "/assets/images/apple-touch-icon-167x167.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ baseurl }}{{ "/assets/images/apple-touch-icon-152x152.png" | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ baseurl }}{{ "/assets/images/apple-touch-icon.png" | relative_url }}">
 
 
     <meta name="theme-color" content="#0b0c0c" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="{{ "/assets/images/opengraph-image.png" | relative_url }}">
+    <meta property="og:image" content="{{ baseurl }}{{ "/assets/images/opengraph-image.png" | relative_url }}">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
 
     {% include footer.html %}
 
-    <script src="/assets/javascripts/govuk-template.js"></script>
+    <script src="{{ baseurl }}{{ "/assets/javascripts/govuk-template.js" | relative_url }}"></script>
 
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
   </body>

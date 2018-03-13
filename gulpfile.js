@@ -14,7 +14,10 @@ gulp.task('jekyll', (done) => {
     '--incremental',
     '--drafts',
     '--destination',
-    'docs'
+    'docs',
+    '--baseurl',
+    '/digital-hub-prototype'
+
   ])
   .on('close', done);
 })
